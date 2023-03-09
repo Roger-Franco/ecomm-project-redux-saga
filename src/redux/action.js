@@ -7,3 +7,11 @@ export const addToCart = (data) => {
     data: data
   }
 }
+
+// export const removeToCart = (data) => {
+//   console.log("action is called", data);
+//   return {
+//     type: REMOVE_TO_CART,
+//     data: data
+//   }
+// }
