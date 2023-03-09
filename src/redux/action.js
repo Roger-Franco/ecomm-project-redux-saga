@@ -1,4 +1,4 @@
-import {ADD_TO_CART} from "./constant"
+import {ADD_TO_CART, REMOVE_FROM_CART, EMPTY_CART} from "./constant"
 
 export const addToCart = (data) => {
   console.log("action is called", data);
@@ -8,10 +8,17 @@ export const addToCart = (data) => {
   }
 }
 
-// export const removeToCart = (data) => {
-//   console.log("action is called", data);
-//   return {
-//     type: REMOVE_TO_CART,
-//     data: data
-//   }
-// }
+export const removeFromCart = (data) => {
+  console.log("removeFromCart action is called", data);
+  return {
+    type: REMOVE_FROM_CART,
+    data: data
+  }
+}
+
+export const emptyCart = () => {
+  console.log("emptyCart action is called");
+  return {
+    type: EMPTY_CART
+  }
+}
