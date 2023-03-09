@@ -7,7 +7,7 @@ export const cartData = (data=[], action) => {
       return [action.data, ...data]
     case REMOVE_FROM_CART:
   console.log("REMOVE_FROM_CART condition", action );
-      data.length = data.length -1
+  data.length = data.length ? data.length -1 : [] // validação no "length" para nao dar erro
       return [...data]
     case EMPTY_CART:
   console.log("EMPTY_CART condition", action );
