@@ -20,7 +20,7 @@ function Main() {
       <button onClick={() => dispatch(removeFromCart(product.name))}>Remove from Cart</button>
       </div> */}
       <div>
-      <button onClick={() => dispatch(emptyCart())}>Empty Cart</button>
+      <button onClick={() => dispatch(emptyCart())}>Empty!! Cart</button>
       </div>
       {/* <div>
       <button onClick={() => dispatch(productList())}>Call Product List</button>
